@@ -1,0 +1,71 @@
+<form name="signupForm" class="form-horizontal" role="form" style="padding-top: 20px;">
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="reg_name">Name</label>
+        <div class="col-sm-6">
+            <span class="block input-icon input-icon-right">
+        <input type="text" class="form-control" id="reg_name" placeholder="Name" ng-model="signup.reg_name" />
+    </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="reg_address">Address</label>
+        <div class="col-sm-6">
+            <span class="block input-icon input-icon-right">
+        <input type="text" class="form-control" id="reg_address" placeholder="Address" ng-model="signup.reg_address" />
+    </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="username">Username</label>
+        <div class="col-sm-6">
+            <span class="block input-icon input-icon-right">
+        <input type="text" class="form-control" id="username" placeholder="Username" ng-model="signup.username" />
+    </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="email">Email</label>
+        <div class="col-sm-6">
+            <span class="block input-icon input-icon-right">
+                <input type="text" class="form-control" id="email" placeholder="Email" name="email" ng-model="signup.email" focus/>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="password">Password</label>
+        <div class="col-sm-6">
+            <span class="block input-icon input-icon-right">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password" ng-model="signup.password" required/>
+    </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="gender">Gender</label>
+        <div class="col-sm-6">
+            <span class="block input-icon input-icon-right">
+        <input type="text" class="form-control" id="gender" placeholder="Gender" name="gender" ng-model="signup.gender"/>
+    </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="contact">Contact</label>
+        <div class="col-sm-6">
+            <span class="block input-icon input-icon-right">
+        <input type="text" class="form-control" id="contact" placeholder="contact" name="contact" ng-model="signup.contact"/>
+    </span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <span class="lbl col-sm-2"> </span>
+        <div class="col-sm-6">
+            <button type="submit" class="width-35 btn btn-sm btn-primary" ng-click="signUp(signup)" data-ng-disabled="signupForm.$invalid">
+                Sign Up
+            </button>
+        </div>
+    </div>
+    </fieldset>
+    <span class="lbl col-sm-2"> </span>
+    <div class="col-sm-5">Already have an account? <a href="/login">SignIn</a>
+    </div>
+</form>

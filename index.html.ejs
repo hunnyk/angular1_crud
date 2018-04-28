@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>angular-boilerplate</title>
+    <base href="/">
+  <link rel="stylesheet" href="<%= asset('app.css') %>">
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.1.0/toaster.min.css" rel="stylesheet" />
+</head>
+<body ng-cloak ng-app='app'>
+  <div ng-include="'/templates/nav.html'"></div>
+  <div ng-view></div>
+  <!--<div ui-view></div>-->
+  <% if (production) { %>
+  <script src="<%= asset('angular/angular.min.js') %>"></script>
+  <script src="<%= asset('angular-route/angular-route.min.js') %>"></script>
+  <script src="<%= asset('angular-material/angular-material.js') %>"></script>
+  <script src="<%= asset('angular-animate/angular-animate.js') %>"></script>
+  <script src="<%= asset('angular-aria/angular-aria.js') %>"></script>
+  <% } else { %>
+  <script src="<%= asset('angular/angular.js') %>"></script>
+  <script src="<%= asset('angular-route/angular-route.js') %>"></script>
+  <script src="<%= asset('angular-material/angular-material.js') %>"></script>
+  <script src="<%= asset('angular-animate/angular-animate.js') %>"></script>
+  <script src="<%= asset('angular-aria/angular-aria.js') %>"></script>
+  <% } %>
+  <script src="<%= asset('app.js') %>"></script>
+
+  <!--Angular toaster-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.1.0/toaster.min.js"></script>
+
+  <!-- Angular Material Dependencies -->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-animate.min.js"></script>-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-aria.min.js"></script>-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-messages.min.js"></script>-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.6/angular-material.min.js"></script>-->
+
+
+</body>
+</html>
